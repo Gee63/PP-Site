@@ -1,0 +1,192 @@
+.offer-main-container{
+  width: 100%;
+  max-width: 1454px;
+  height: 300px;
+  background: url('../img/offer-main-desktop.jpg')no-repeat 0 0 / cover;
+  margin-top: 100px;
+
+  .pp-logo {
+    display: none;
+    max-width: 310px;
+    position: relative;
+    height: 75px;
+    padding: 10px 10px;
+    margin: auto;
+    width: 90%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .offer {
+    text-align: center;
+    line-height: 1;
+    text-transform: uppercase;
+    width: 485px;
+    float: right;
+    margin-right: 90px;
+    margin-top: 10px;
+    position: relative;
+
+    p:first-child {
+      color: $offer-text-color;
+      font-weight: normal;
+      font-size: 90px;
+      margin: 0;
+      position: relative;
+      span {
+        color: $offer-sup-text-color;
+        font-weight: 100;
+        font-size: 50px;
+        top: -40px;
+        position: relative;
+      }
+    }
+    p:nth-child(2) {
+      color: $offer-text-color;
+      font-size: 55px;
+      font-weight: 100;
+      margin: 10px 0 0 0;
+    }
+
+    .ctas {
+      margin: 15px auto 0;
+      width: 100%;
+      .cta {
+        width: 45%;
+        height: 65px;
+        float: left;
+        border-radius: 5px;
+        text-align: center;
+        display: table;
+
+        a {
+          display: table-cell;
+          vertical-align: middle;
+          text-decoration: none;
+
+          span {
+            color: #fff;
+            font-size: 28px;
+            font-weight: 100;
+            text-transform: uppercase;
+
+          }
+        }
+
+      }
+      .play-now {
+        margin-right: 5%;
+        background-color: $red;
+      }
+      .download {
+       margin-left: 5%;
+        background-color: $grey;
+      }
+      .tap-now {
+        display: none;
+        background-color: $red;
+        margin: auto;
+        left: 0;
+        right: 0;
+        position: absolute;
+      }
+      .more-info {
+        clear: both;
+        text-align: center;
+        padding-top: 15px;
+        a {
+          text-decoration: none;
+          span {
+            margin-top: 25px;
+            font-size: 22px;
+            text-transform: uppercase;
+            color: $offer-sup-text-color;
+            border-bottom: 1px $offer-sup-text-color solid;
+            font-weight: 100;
+          }
+        }
+
+      }
+    }
+  }
+
+
+}
+
+@media screen and (max-width: 1024px){
+  .offer-main-container{
+    background: url('../img/offer-main-mobi.jpg') no-repeat 0 0/ cover;
+    margin-top: 0;
+    height: 375px;
+
+    .pp-logo {
+      display: block;
+    }
+
+    .offer{
+      margin: 10px auto;
+      width: 100%;
+      max-width: 485px;
+
+      .ctas{
+        .play-now{
+          display: none;
+        }
+        .download{
+          display: none;
+        }
+        .tap-now {
+          display: table;
+        }
+        .more-info{
+          padding-top: 70px;
+         }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 550px){
+  .offer-main-container{
+    background: url('../img/offer-main-small.jpg')no-repeat 0 0 / cover;
+  }
+
+  .main-container .offer {
+    margin: 0px auto;
+    width: 100%;
+    max-width: 485px;
+    float: none;
+    padding-top: 15px;
+  }
+
+  .offer-main-container .offer p:first-child{
+    font-size: 70px;
+
+    span{
+      font-size: 40px;
+      top: -27px;
+    }
+  }
+
+  .offer-main-container .offer p:nth-child(2){
+    font-size: 45px;
+  }
+}
+
+@media screen and (max-width: 375px){
+  .offer-main-container .offer p:first-child{
+    font-size: 60px;
+
+    span{
+      font-size: 45px;
+      top: -16px;
+    }
+  }
+
+  .offer-main-container .offer p:nth-child(2){
+    font-size: 35px;
+  }
+}

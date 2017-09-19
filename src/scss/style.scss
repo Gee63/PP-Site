@@ -1,0 +1,80 @@
+//----------------------------------*\
+// SCSS MIXINS
+//----------------------------------*/
+
+@import 'mixins/_vendor.scss';
+@import 'mixins/_position.scss';
+
+//----------------------------------*\
+// CONFIG MODULES
+//----------------------------------*/
+
+// Config modules
+@import 'modules/_vars.scss';
+@import 'modules/_clearfix.scss';
+@import 'modules/_normalize.scss';
+@import 'modules/_defaults.scss';
+
+//----------------------------------*\
+// PARTIALS
+//----------------------------------*/
+
+@import 'partials/_header.scss';
+@import 'partials/_nav.scss';
+@import 'partials/_sidebar.scss';
+@import 'partials/_main.scss';
+@import 'partials/_footer.scss';
+
+//----------------------------------*\
+// OBJECTS & MODULES
+//----------------------------------*/
+
+@import 'modules/_buttons.scss';
+@import 'modules/_inputs.scss';
+@import 'modules/_lists.scss';
+@import 'modules/_typography.scss';
+@import 'modules/_misc.scss';
+@import 'modules/_app.scss';
+
+// Enhancement modules
+@import 'modules/_breakpoints.scss';
+@import 'modules/_print.scss';
+
+//----------------------------------*\
+// VENDOR
+//----------------------------------*/
+
+@import 'vendor/_external.scss';
+
+/*mobile styles*/
+@import 'vendor/_landing-mobi.scss';
+@import 'vendor/_mobi-footer-menu.scss';
+@import 'vendor/_loading-screen.scss';
+
+
+/*games header*/
+@import 'vendor/_games-header.scss';
+
+
+/*desktop styles*/
+/*@import 'vendor/_landing-desktop.scss';
+@import 'vendor/_header-desktop.scss';*/
+
+
+
+
+/*both mobile and desktop*/
+@import 'vendor/_footer';
+@import 'vendor/_popup.scss';
+@import 'vendor/_offer-main.scss';
+@import 'vendor/_offer-secondary.scss';
+@import 'vendor/_content.scss';
+@import 'vendor/_gameControl.scss';
+@import 'vendor/_bottom-images.scss';
+@import 'vendor/_tournaments.scss';
+@import 'vendor/_accordion.scss';
+
+
+
+
+

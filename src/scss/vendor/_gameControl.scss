@@ -1,0 +1,285 @@
+/* Game Control - Start */
+.gameControl {
+  width: 100%;
+  padding: 25px 10px 10px;
+  margin: auto;
+  background-color: #fff;
+  overflow: auto;
+}
+
+.gameControlBlock {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.gameFavIcon {
+  background: url("/assets/img/icons_sprite.png") no-repeat -24px -58px;
+}
+
+.gameControlNavJackpot {
+  width: 100%;
+}
+
+.gameControlGameBlock {
+  margin: auto;
+  text-align: center;
+}
+
+.gameItemBox {
+  width: 20%;
+  box-sizing: border-box;
+  float: left;
+  overflow: hidden;
+  padding: 10px;
+
+  .inner{
+    width: 100%;
+    border: 1px #dddddd solid;
+    height: 100%;
+    border-radius: 6px;
+  }
+}
+
+.gameTile {
+  border-radius: 0px;
+}
+
+.gameItemImage {
+  width: 100%;
+  position: relative;
+}
+
+.gameItemImage img {
+  width: 100%;
+  border-radius: 6px 6px 0 0;
+}
+
+.gameItemHover {
+  opacity: 0;
+  transition: opacity 300ms linear;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(239, 239, 239, .65);
+}
+
+.gameItemHover:hover {
+  opacity: 1;
+  transition: opacity 300ms linear;
+}
+
+.gamePlayButton {
+  font-family: $primary-font;
+  font-size: 19px;
+  position: relative;
+  margin: 0 auto;
+  cursor: pointer;
+  width: calc(100% - 60px);
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 100;
+  color: #fff;
+  border-radius: 3px;
+  background-color: #455055;
+  padding: 4% 0;
+  line-height: 1;
+}
+
+.loggedin .gamePlayNow {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.loggedout .gamePlayNow {
+  top: 20%;
+}
+
+.loggedin .gameSignUp {
+  display: none;
+}
+
+.loggedout .gameSignUp {
+  background-color: $red;
+  top: 12%;
+  display: block
+}
+
+.gameItemProgAmount {
+  position: absolute;
+  height: 15px;
+  bottom: 3px;
+  width: 100%;
+  font-size: 15px;
+  line-height: 15px;
+  text-align: left;
+  left: 10px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.gameItemInfo {
+  width: 100%;
+  height: 40px;
+  background: #fff;
+  position: relative;
+  border-radius: inherit;
+}
+
+.gameItemTitle {
+  font-size: 14px;
+  text-transform: capitalize;
+  line-height: 15px;
+  width: 65%;
+  color: #6b6b6b;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+  text-align: left;font-family: 'Open Sans', sans-serif;
+}
+
+.gameItemIcons {
+  width: 40%;
+  height: 28px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 0;
+  overflow: hidden;
+}
+
+.infoIcon {
+  display: block;
+  float: right;
+  height: 28px;
+  width: 30px;
+  margin: 0 5px 0 0;
+  background-image: url('../img/gameicons/game-icon-sprite.png');
+}
+
+
+.likeIcon{
+  background-position: -175px 0;
+  cursor: pointer;
+
+  &:hover{
+    background-position: -131px 0;
+  }
+}
+
+.liked{
+  background-position: -131px 0 !important;
+}
+
+.mobileIcon {
+  background-position: -218px 0;
+}
+
+.favIcon {
+  background-position: -44px 0;
+  cursor: pointer;
+}
+
+.hotIcon {
+  background-position: -88px 0;
+}
+
+.coldIcon {
+  background-position: 0 0;
+}
+
+
+
+.gameControlNavJackpot {
+  height: 116px;
+  width: calc(100% - 2px);
+  background: url("/assets/img/jackpot_bg.jpg");
+  padding-top: 20px;
+  margin: 0 1px;
+}
+
+.gameControlJackpotHeading {
+  margin-bottom: 13px;
+  color: #393939;
+  text-transform: uppercase;
+  font-size: 19px;
+  text-align: center;
+  width: 100%;
+  font-family: 'Gentium Basic', serif;
+  margin-top: 12px;
+}
+
+.gameControlJackpotValue, .gameControlJackpotValue input {
+  background: rgba(0, 0, 0, 0);
+  border: none;
+  width: 100%;
+  font-size: 30px;
+  text-align: center;
+  font-family: 'Gentium Basic', serif;
+  color: #21439d;
+  font-weight: bold;
+}
+
+.tempIcon {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 28px;
+  width: 28px;
+  background-image: url("../img/gameicons/game-icon-sprite.png");
+}
+
+.fire{
+  background-position: 0 0;
+}
+
+
+.gameItemTitleProgressive{
+  font-size: 15px;
+  text-transform: capitalize;
+  line-height: 15px;
+  width: 100%;
+  color: #6b6b6b;
+  position: absolute;
+  top: 0;
+  left: 10px;
+  text-align: left;
+  font-family: 'Open Sans', sans-serif;
+}
+
+@media screen and (max-width: 1024px){
+  .gameItemBox {
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .gameItemBox {
+    width: 33.333%;
+  }
+
+  .gameItemTitle{
+    width: calc( 100% - 20px);
+  }
+  .gameItemIcons{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .gameItemBox {
+    width: 50%;
+  }
+}

@@ -1,0 +1,104 @@
+.offer-secondary-container{
+  width: 100%;
+  max-width: 1454px;
+  height: 200px;
+  background: url('../img/offer-secondary-desktop.jpg')no-repeat 0 0 / cover;
+  margin-top: 100px;
+
+  .offer {
+    text-align: center;
+    line-height: 1;
+    text-transform: uppercase;
+    width: 740px;
+    float: right;
+    margin-top: 10px;
+    position: relative;
+
+    p:first-child {
+      color: $offer-text-color;
+      font-weight: normal;
+      font-size: 80px;
+      margin: 0;
+      position: relative;
+      float: left;
+      span {
+        color: $offer-sup-text-color;
+        font-weight: 100;
+        font-size: 45px;
+        top: -33px;
+        position: relative;
+      }
+    }
+    p:nth-child(2) {
+      color: $offer-text-color;
+      font-size: 51px;
+      font-weight: 100;
+      margin: 10px 0 0 20px;
+      float: left;
+    }
+
+    .ctas {
+      margin: 15px auto 0;
+      width: 60%;
+      .cta {
+        margin-top: 15px;
+        width: 47.5%;
+        height: 45px;
+        float: left;
+        border-radius: 5px;
+        text-align: center;
+        display: table;
+
+
+        a {
+          display: table-cell;
+          vertical-align: middle;
+          text-decoration: none;
+
+          span {
+            color: #fff;
+            font-size: 28px;
+            font-weight: 100;
+            text-transform: uppercase;
+
+          }
+        }
+
+      }
+      .play-now {
+        margin-right: 2.5%;
+        background-color: $red;
+      }
+      .download {
+        margin-right: 2.5%;
+        background-color: $grey;
+      }
+      .tap-now {
+        display: none;
+        background-color: $red;
+        margin: auto;
+        left: 0;
+        right: 0;
+        position: absolute;
+      }
+      .more-info {
+        clear: both;
+        text-align: center;
+        padding-top: 10px;
+        a {
+          text-decoration: none;
+          span {
+            font-size: 17px;
+            text-transform: uppercase;
+            color: $offer-sup-text-color;
+            border-bottom: 1px $offer-sup-text-color solid;
+            font-weight: 100;
+          }
+        }
+
+      }
+    }
+  }
+}
+
+

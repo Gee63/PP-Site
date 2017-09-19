@@ -1,0 +1,20 @@
+* {
+  -webkit-font-smoothing:antialiased;
+  font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+  @include vendor(box-sizing, border-box);
+}
+html {
+  font-size:62.5%;
+}
+body {
+  font-family: $primary-font;
+  background:#fff;
+  color:#444;
+
+
+}
+
+::-webkit-scrollbar {
+  display: none;
+}

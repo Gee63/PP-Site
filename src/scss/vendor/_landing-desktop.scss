@@ -1,0 +1,345 @@
+/*******************************************************/
+/*******************************************************/
+/***************----DESKTOP LANDING STYLING START---*************/
+/*******************************************************/
+/*******************************************************/
+
+body, html {
+  height: 100%;
+  font-family: $primary-font !important;
+  margin: auto;
+  background-color: #e6e6e6;
+
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+.main-container{
+  max-width: 1454px;
+  margin: auto;
+}
+
+a, a:active, a:focus {
+  outline: none;
+}
+
+.clear{
+  clear: both;
+}
+
+.landing-container {
+  background: url('../img/landing-bg.jpg') no-repeat center / cover;
+  width: 100%;
+  min-width: 1024px;
+  min-height: 100%;
+  position: relative;
+  font-family: $primary-font;
+
+  .landing-container-inner {
+    min-width: 1024px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    max-width: 1250px;
+    width: 100%;
+    padding-left: 20px;
+
+    .pp-logo {
+      width: 410px;
+      position: relative;
+      left: 0;
+      height: 75px;
+      padding-top: 28px;
+      float: left;
+    }
+
+    .selection-container {
+      padding-top: 46px;
+      position: absolute;
+      right: 20%;
+
+      .language-select {
+        float: left;
+        display: table;
+        cursor: pointer;
+
+        &:before {
+          content: url('../img/icon-globe.png');
+          width: 24px;
+          height: 24px;
+          padding: 0 13px;
+        }
+        &:after {
+          content: url('../img/language-select-arrow.png');
+          width: 24px;
+          height: 24px;
+          padding: 0 13px;
+          display: table-cell;
+          vertical-align: middle;
+        }
+      }
+      .login-select {
+        float: left;
+        display: table;
+        cursor: pointer;
+
+        &:before {
+          content: url('../img/icon-person.png');
+          width: 24px;
+          height: 24px;
+          padding: 0 13px;
+        }
+      }
+      span {
+        color: $primary-font-color;
+        text-transform: uppercase;
+        display: table-cell;
+        vertical-align: middle;
+        font-size: 15px;
+      }
+    }
+
+    .offer-container {
+      width: 100%;
+      max-width: 600px;
+      right: 21%;
+      position: absolute;
+      top: 15%;
+
+      .award {
+        img {
+          margin: auto;
+          display: block;
+        }
+      }
+
+      .offer {
+        text-align: center;
+        line-height: 1;
+        text-transform: uppercase;
+        p:first-child {
+          color: $offer-text-color;
+          font-weight: bold;
+          font-size: 123px;
+          margin: 100px 0 0 0;
+          position: relative;
+          span {
+            color: $offer-sup-text-color;
+            font-weight: 100;
+            font-size: 60px;
+            top: -60px;
+            position: relative;
+          }
+        }
+        p:nth-child(2) {
+          color: $offer-text-color;
+          font-size: 75px;
+          font-weight: 100;
+          margin: 20px 0 0 0;
+        }
+      }
+
+      .ctas {
+        margin: 50px auto;
+        width: 550px;
+        .cta {
+          width: 250px;
+          height: 65px;
+          float: left;
+          border-radius: 5px;
+          text-align: center;
+          display: table;
+
+          a {
+            display: table-cell;
+            vertical-align: middle;
+            text-decoration: none;
+
+            span {
+              color: #fff;
+              font-size: 28px;
+              font-weight: 100;
+              text-transform: uppercase;
+
+            }
+          }
+
+        }
+        .play-now {
+          margin-right: 25px;
+          background-color: $red;
+        }
+        .download {
+          margin-left: 25px;
+          background-color: $grey;
+        }
+        .tap-now {
+          display: none;
+        }
+        .more-info {
+          clear: both;
+          text-align: center;
+          padding-top: 28px;
+          a {
+            text-decoration: none;
+            span {
+              margin-top: 25px;
+              font-size: 22px;
+              text-transform: uppercase;
+              color: $offer-sup-text-color;
+              border-bottom: 1px $offer-sup-text-color solid;
+              font-weight: 100;
+
+            }
+          }
+
+        }
+      }
+
+    }
+  }
+
+
+
+}
+
+.below-fold{
+  width: 100%;
+  background-color: #e6e6e6;
+
+
+  .below-fold-inner{
+    min-width: 1024px;
+    max-width: 1455px;
+    margin: auto;
+    padding: 100px 10px;
+
+    h1{
+      margin: 0 0 30px 0;
+      font-size: 24px;
+      text-transform: uppercase;
+      font-weight: normal;
+    }
+
+    .split{
+      width: 50%;
+      box-sizing: border-box;
+      font-size: 14px;
+      float: left;
+
+      &:nth-child(2){
+        padding-right: 10px;
+      }
+      &:nth-child(3){
+        padding-left: 10px;
+      }
+    }
+  }
+}
+
+.desktop{
+  display: block !important;
+}
+.mobi{
+  display: none !important;
+}
+
+@media screen and (max-width: 1366px) {
+
+  .landing-container .landing-container-inner .offer-container{
+    right: 10%;
+  }
+
+
+  .landing-container .landing-container-inner .offer-container .award img{
+    width: 230px;
+  }
+
+  .landing-container .landing-container-inner .offer-container .offer p:first-child{
+    font-size: 80px;
+    margin: 40px 0 0 0;
+
+    span{
+      font-size: 45px;
+      top: -33px;
+    }
+  }
+
+  .landing-container .landing-container-inner .offer-container .offer p:nth-child(2){
+    font-size: 55px;
+    margin: 10px 0 0 0;
+  }
+
+  .landing-container .landing-container-inner .offer-container .ctas{
+    margin: 20px auto;
+    width: 500px;
+
+    .cta{
+      width: 235px;
+    }
+
+    .play-now {
+      margin-right: 15px;
+    }
+
+    .download {
+      margin-left: 15px;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px){
+  .landing-container{
+    background: url("../img/landing-bg-1024.jpg") no-repeat center/cover;
+  }
+}
+
+@media screen and (max-height: 950px){
+  .landing-container .landing-container-inner .offer-container .award img{
+    width: 230px;
+  }
+
+  .landing-container .landing-container-inner .offer-container .offer p:first-child{
+    font-size: 80px;
+    margin: 40px 0 0 0;
+
+    span{
+      font-size: 45px;
+      top: -33px;
+    }
+  }
+
+  .landing-container .landing-container-inner .offer-container .offer p:nth-child(2){
+    font-size: 55px;
+    margin: 10px 0 0 0;
+  }
+
+  .landing-container .landing-container-inner .offer-container .ctas{
+    margin: 20px auto;
+    width: 500px;
+
+    .cta{
+      width: 235px;
+    }
+
+    .play-now {
+      margin-right: 15px;
+    }
+
+    .download {
+      margin-left: 15px;
+    }
+  }
+}
+
+
+
+
+/*******************************************************/
+/*******************************************************/
+/***************----DESKTOP LANDING STYLING END---*************/
+/*******************************************************/
+/*******************************************************/

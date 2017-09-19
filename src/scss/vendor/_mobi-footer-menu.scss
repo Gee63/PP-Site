@@ -1,0 +1,338 @@
+/*******************************************************/
+/*******************************************************/
+/********----MOBILE FOOTER MENU STYLING START---*******/
+/*******************************************************/
+/*******************************************************/
+
+footer.mobi {
+  position: fixed;
+  background-color: #828385;
+  height: 100px;
+  bottom: 0;
+  width: 100%;
+  z-index: 100;
+  max-width: 1024px;
+
+
+
+  .menu-items {
+    height: 100%;
+
+    .menu-item {
+      float: left;
+      width: 20%;
+      box-sizing: border-box;
+      height: 100%;
+      display: table;
+
+      .menu-item-container {
+        height: 70px;
+        display: table-cell;
+        vertical-align: middle;
+
+        .icon {
+          height: 50px;
+          position: relative;
+
+          img {
+            margin: auto;
+            display: block;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+          }
+        }
+
+        .text {
+          p {
+            text-align: center;
+            margin: 10px 0 0;
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 18px;
+            line-height: 1;
+            font-weight: 400;
+          }
+        }
+
+      }
+    }
+  }
+
+  /*open menu styling*/
+
+  .mobi-menu-open-container {
+    width: 100%;
+    background-color: #77797b;
+    position: absolute;
+    bottom: 100px;
+    box-sizing: border-box;
+    -webkit-transition: height 0.5s linear;
+    -moz-transition: height 0.5s linear;
+    -ms-transition: height 0.5s linear;
+    -o-transition: height 0.5s linear;
+    transition: height 0.5s linear;
+    height: 0;
+    overflow: scroll;
+
+    .open-item {
+      height: 90px;
+      border-bottom: 1px #4b4c4e solid;
+      border-top: 1px #9ea0a1 solid;
+      display: table;
+      width: 100%;
+
+      &:first-child {
+        border-top: none;
+      }
+
+      p {
+        padding-left: 5%;
+        font-size: 24px;
+        font-weight: normal;
+        margin: 0;
+        display: table-cell;
+        vertical-align: middle;
+        line-height: 1;
+        color: #fff;
+        text-transform: uppercase;
+
+        a{
+          color: #fff;
+          text-decoration: none;
+        }
+      }
+
+      img {
+        float: right;
+        margin: 28px 30px;
+      }
+
+    }
+
+    /*sub/first-child navigation styling*/
+    .sub-nav {
+      width: 100%;
+      -webkit-transition: height 0.5s linear;
+      -moz-transition: height 0.5s linear;
+      -ms-transition: height 0.5s linear;
+      -o-transition: height 0.5s linear;
+      transition: height 0.5s linear;
+      height: 0;
+      overflow: hidden;
+
+      .item {
+        height: 60px;
+        background-color: #919294;
+        display: table;
+        width: 100%;
+        padding-right: 15px;
+
+        p {
+          padding-left: 8%;
+          font-size: 24px;
+          font-weight: normal;
+          margin: 0;
+          display: table-cell;
+          vertical-align: middle;
+          line-height: 1;
+          color: #fff;
+          text-transform: uppercase;
+        }
+
+        img {
+          float: right;
+          margin: 28px 30px;
+        }
+
+        .flag {
+          background: url('../img/flags-sprite.png');
+          float: right;
+          margin: 15px 15px 0 0;
+          width: 35px;
+          height: 26px;
+        }
+
+        .ger{
+          background-position: 0 0;
+        }
+
+        .swt{
+          background-position: -38px 0;
+        }
+
+        .aus{
+          background-position: -76px 0;
+        }
+        .esp{
+          background-position: -114px 0;
+        }
+        .por{
+          background-position: -152px 0;
+        }
+        .cad{
+          background-position: -228px 0;
+        }
+        .eur{
+          background-position: -190px 0;
+        }
+        .gre{
+          background-position: -266px 0;
+        }
+        .swe{
+          background-position: -304px 0;
+        }
+        .nor{
+          background-position: -342px 0;
+        }
+        .fin{
+          background-position: -381px 0;
+        }
+
+
+      }
+
+
+      /*sub sub nav styles*/
+      .sub-sub-nav{
+        width: 100%;
+        -webkit-transition: height 0.5s linear;
+        -moz-transition: height 0.5s linear;
+        -ms-transition: height 0.5s linear;
+        -o-transition: height 0.5s linear;
+        transition: height 0.5s linear;
+        height: 0px;
+        overflow: hidden;
+
+        .item {
+          height: 60px;
+          background-color: #AAABAD;
+          display: table;
+          width: 100%;
+
+          p {
+            padding-left: 11%;
+            font-size: 24px;
+            font-weight: normal;
+            margin: 0;
+            display: table-cell;
+            vertical-align: middle;
+            line-height: 1;
+            color: #fff;
+            text-transform: uppercase;
+          }
+
+          img {
+            float: right;
+            margin: 28px 30px;
+          }
+        }
+      }
+    }
+
+  }
+
+}
+
+.loggedin footer.mobi{
+  .loggedout {
+    display: none;
+  }
+
+  .loggin {
+    display: block;
+  }
+}
+
+.loggedout footer.mobi{
+  .loggedout {
+    display: block;
+  }
+
+  .loggin {
+    display: none;
+  }
+}
+
+.mobi-menu-open {
+  /*height: 400px !important;*/
+}
+
+
+
+@media screen and (max-width: 600px){
+  footer.mobi {
+    height: 55px;
+
+    .menu-items .menu-item .menu-item-container .text p {
+      font-size: 10px;
+    }
+  }
+
+  footer.mobi .menu-items .menu-item .menu-item-container .icon {
+    height: 20px;
+  }
+
+  footer.mobi .menu-items .menu-item .menu-item-container .icon img {
+    height: 20px;
+  }
+
+  footer.mobi .mobi-menu-open-container {
+    bottom: 55px;
+  }
+
+  footer.mobi .menu-items .menu-item .menu-item-container{
+    height: 55px;
+  }
+
+  footer.mobi .mobi-menu-open-container .open-item p{
+    font-size: 14px;
+  }
+
+  footer.mobi .mobi-menu-open-container .open-item img{
+    margin: 14px 30px;
+    width: 25px;
+  }
+
+  footer.mobi .mobi-menu-open-container .open-item{
+    height: 55px;
+  }
+
+  footer.mobi .mobi-menu-open-container .sub-nav .item{
+    height: 45px;
+  }
+
+  footer.mobi .mobi-menu-open-container .sub-nav .item p{
+    font-size: 14px;
+  }
+
+  footer.mobi .mobi-menu-open-container .sub-nav .item .flag{
+    margin: 10px 15px 0 0;
+  }
+
+  footer.mobi .mobi-menu-open-container .sub-nav .sub-sub-nav .item p{
+    font-size: 14px;
+  }
+
+  footer.mobi .mobi-menu-open-container .sub-nav .sub-sub-nav .item p{
+    margin: 10px 30px;
+  }
+
+  footer.mobi .mobi-menu-open-container .sub-nav .sub-sub-nav .item{
+    height: 55px;
+  }
+}
+
+
+
+/*******************************************************/
+/*******************************************************/
+/********----MOBILE FOOTER MENU STYLING END---*********/
+/*******************************************************/
+/*******************************************************/

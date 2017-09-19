@@ -1,0 +1,515 @@
+.tournaments-container table > tbody > tr {
+  color: #000
+}
+
+.tournaments-container {
+  width: 100%;
+  padding: 65px 30px 40px;
+  color: #7c4d2e;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #fff;
+}
+
+.tournaments-container table {
+  width: 100%;
+  display: table;
+  -webkit-transition: color 500ms linear;
+  -moz-transition: color 500ms linear;
+  -o-transition: color 500ms linear;
+  -ms-transition: color 500ms linear;
+  transition: color 500ms linear;
+  margin-bottom: 30px
+}
+
+.tournaments-container table thead tr th {
+  border: 1px solid #e6e6e6;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px 20px;
+  color: #000;
+  text-align: left;
+  background-color: #fff;
+}
+
+.tournaments-container table td tr {
+ border: 1px solid #e6e6e6;
+  padding: 10px 20px;
+  display: table-cell;
+  text-align: left;
+  vertical-align: middle;
+  border-radius: 2px;
+  color: #7c4d2e
+}
+
+.tournaments-container table td {
+ border: 1px solid #e6e6e6;
+  text-align: left;
+  padding: 5px 20px;
+  font-size: 14px;
+  font-weight: normal
+}
+
+.tournaments-container table td a {
+  color: #7c4d2e
+}
+
+.tournaments-container table td a:hover {
+  color: #fff
+}
+
+tr.red-hightlight:hover {
+  background: red !important
+}
+
+.tournaments-container table > tbody > tr:nth-child(4n+1) {
+  background-color: #f2f2f2;
+}
+
+.tournaments-container table td:nth-child(5) {
+  text-decoration: underline;
+  cursor: pointer
+}
+
+.tournaments-container table td .uk-dropdown {
+  position: relative;
+  width: 100%
+}
+
+.tournaments-container table tbody tr {
+  -webkit-transition: background-color .3s linear;
+  -moz-transition: background-color .3s linear;
+  -o-transition: background-color .3s linear;
+  -ms-transition: background-color .3s linear;
+  transition: background-color .3s linear
+}
+
+.show-tournament-dropdown {
+  cursor: pointer
+}
+
+.tournaments-container table tbody tr.tournament-dropdown {
+  height: 0 !important;
+  display: none
+}
+
+
+
+.red-highlight {
+  background-color: $red !important;
+  color: #fff !important
+}
+
+.row-highlight:hover {
+  background-color: $red !important;
+  color: #fff !important
+}
+
+.join-btn-container {
+  position: relative;
+  text-align: center
+}
+
+.join-tournament-btn {
+  padding: 10px 33%;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  float: right
+}
+
+.tab-content h1 {
+  color: #000;
+  font-size: 20px;
+  font-weight: bold
+}
+
+.tab-content .general .title span {
+  font-weight: bold
+}
+
+.tab-content .general .title p {
+  margin-top: 0;
+  line-height: 1
+}
+
+.tab-content .prizes table thead tr {
+  background-color: #fff
+}
+
+.tab-content .rules table tr {
+  border: 1px #f2f2f2 solid
+}
+
+.tab-content .rules table td {
+  border: none;
+  width: 50%;
+  padding: 5px
+}
+
+.tab-content .prizes table thead td {
+  padding: 5px;
+  font-weight: bold
+}
+
+.tab-content .prizes table tbody tr td {
+  padding: 5px
+}
+
+.tab-content .rules table tbody tr .round {
+  font-weight: bold
+}
+
+.tournaments-container table .tab-content .prizes table tbody tr:nth-child(even) {
+  background-color: #f2f2f2 !important;
+}
+
+.tabs-container {
+  width: calc(100% - 300px);
+  margin: 0 auto
+}
+
+.tab-height {
+  height: 580px
+}
+
+ul.tabs {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  height: 40px
+}
+
+
+
+ul.tabs li.current span {
+  background: #5b6971;
+  color: #fff
+}
+
+ul.tabs li span {
+  background: #e8e4d2;
+  padding: 12px 0 !important;
+  display: block;
+  font-weight: 100;
+}
+
+.tab-content {
+  display: none;
+  padding: 15px;
+  color: #333;
+  height: 535px
+}
+
+.tab-content.current {
+  display: inherit
+}
+
+.tab-content .row {
+  width: 100%;
+  position: relative;
+}
+
+.tab-content .row .tab-info {
+  width: 100%;
+  float: left
+}
+
+.tab-content .row .tab-info .info {
+  width: 60%;
+  float: left
+}
+
+.tab-content .row .tab-info .info.general{
+  width: 30%;
+}
+
+.tab-content .row .tab-info .info .block-1-3 {
+  width: 33.333%;
+  float: left
+}
+
+.tab-content .row .tab-info .info .block-2-3 {
+  width: 66.666%;
+  float: left
+}
+
+.tab-content .row .join-btn-container {
+  width: 40%;
+  float: left;
+  right: 0;
+}
+
+.tab-content .info .title span {
+  font-weight: bold
+}
+
+
+.tab-content .row .prizes {
+  width: 60%;
+  float: left
+}
+
+.tab-content .row .rules {
+  width: 60%;
+  float: left
+}
+
+.tournament-tables {
+  position: relative;
+  margin: -296px -1px 0 -1px;
+  background: #fbf8f0
+}
+
+.tournaments-container table {
+  width: 100%;
+  display: table
+}
+
+.tournaments-container table td tr {
+ border: 1px solid #e6e6e6;
+  padding: 10px 20px;
+  display: table-cell;
+  text-align: left;
+  vertical-align: middle;
+  border-radius: 2px;
+  color: #000
+}
+
+
+
+.tournaments-container table td a {
+  color: #7c4d2e
+}
+
+.tournaments-container table td:nth-child(5) {
+  text-decoration: underline;
+  cursor: pointer
+}
+
+.tournaments-container table td .uk-dropdown {
+  position: relative;
+  width: 100%
+}
+
+.tournaments-container table tbody tr.tournament-dropdown {
+  height: 0 !important;
+  display: none
+}
+
+.tournaments-container table tbody tr.show-tournament-details {
+  background-color: #fff;
+  height: 110px !important;
+  display: table-row;
+  -webkit-transition: height 500ms linear;
+  -moz-transition: height 500ms linear;
+  -o-transition: height 500ms linear;
+  -ms-transition: height 500ms linear;
+  transition: height 500ms linear
+}
+
+.join-btn-container {
+  position: absolute;
+  text-align: center
+}
+
+.join-tournament-btn {
+  padding: 13px 33%;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  background-color: $red;
+  border-radius: 5px;
+  color: #fff;
+}
+
+
+.tab-content .general .title span {
+  font-weight: bold
+}
+
+.tab-content .general .title p {
+  margin-top: 0;
+  line-height: 1
+}
+
+.tab-content .rules table td {
+  border: none;
+  width: 50%;
+  padding: 5px
+}
+
+.tournaments-container table .tab-content .rules table tr:nth-child(odd) {
+  background-color: #f2f2f2
+}
+
+.tab-content .prizes table thead td {
+  padding: 5px;
+  font-weight: bold
+}
+
+.tab-content .prizes table tbody tr td {
+  padding: 5px
+}
+
+.tab-content .rules table tbody tr .round {
+  font-weight: bold
+}
+
+
+
+
+
+.tabs-container {
+  width: calc(100% - 300px);
+  margin: 0 auto
+}
+
+.tab-height {
+  height: 580px
+}
+
+ul.tabs {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  height: 50px
+}
+
+ul.tabs li {
+  background: #fff;
+  color: #fff;
+  display: inline-block;
+  padding: 10px 7px;
+  cursor: pointer;
+  width: 20%;
+  border-radius: 5px;
+  box-sizing: border-box;
+  text-align: center;
+  float: left;
+  height: 60px;
+}
+
+
+ul.tabs li span {
+  background: #455056;
+  padding: 12px 45%;
+  text-transform: uppercase;
+  border-radius: 5px;
+  height: 100%;
+}
+
+.tab-content {
+  display: none;
+  padding: 15px;
+  color: #333;
+  height: 585px
+}
+
+.tab-content.current {
+  display: inherit
+}
+
+/*.tournaments-container {
+  display: none
+}*/
+
+.join-tournament-btn {
+  float: right
+}
+
+.tab-content {
+  padding: 15px;
+  color: #333;
+  clear: both;
+  display: none;
+  height: auto
+}
+
+.tab-content .row {
+  margin-left: 0;
+  margin-right: 0
+}
+
+.tab-content .row .join-btn-container {
+  width: 40%;
+  float: left;
+  top: -66px;
+}
+
+.tab-content .row .prizes {
+  width: 60%;
+  float: left
+}
+
+.tab-content .row .rules {
+  width: 60%;
+  float: left
+}
+
+.tournaments-container table td tr {
+ border: 1px solid #e6e6e6;
+  padding: 10px 20px;
+  display: table-row;
+  text-align: left;
+  vertical-align: middle;
+  border-radius: 2px;
+}
+
+.tournament-sub-heading {
+  color: $red;
+  font-size: 20px;
+  font-weight: bold;
+  display: block;
+  font-size: 2em;
+  -webkit-margin-before: .67em;
+  -webkit-margin-after: .67em;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  font-weight: bold
+}
+
+/*.tab-content .info .title {
+  margin-top: 10px
+}*/
+
+.tab-content .info .title span {
+  font-weight: 600
+}
+
+.general-tour-info {
+  float: right;
+  width: 50%;
+  font-weight: normal !important
+}
+
+#isLoggedIn .Game-Launch-Account-Btns {
+  display: block;
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  height: 35px;
+  color: #fff;
+  font-size: 16px
+}
+
+.tournament-fav-hide {
+  display: none
+}
+
+.DisplayRow {
+  background: #fbf8f0 !important
+}
+
+.red-highlight {
+  background: $red !important
+}
+
+.row-highlight:hover {
+  background: $red !important;
+  color: #fff !important;
+  cursor: pointer
+}
+
+.tournaments-container .info {
+  color: #000
+}

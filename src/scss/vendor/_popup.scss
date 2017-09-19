@@ -1,0 +1,2138 @@
+::-webkit-scrollbar { width: 0 !important }
+
+.modal-container {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  overflow: hidden;
+  z-index: 1000;
+
+  .modal-content {
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+    -webkit-box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.2);
+
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+  -ms-overflow-style: none;
+   overflow: -moz-scrollbars-none;
+
+    .close-modal {
+      width: 100%;
+      height: 25px;
+      margin-top: 30px;
+
+      img {
+        float: right;
+        margin-right: 30px;
+        cursor: pointer;
+      }
+    }
+
+    .header{
+      width: 100%;
+      background-color: #d1d2d3;
+      height: 80px;
+      padding-top: 12px;
+      display: none;
+
+      img{
+        width: 280px;
+        margin: auto;
+        display: block;
+      }
+    }
+  }
+
+}
+
+/*language selector*/
+.languages {
+
+  .modal-content {
+    width: 625px;
+    height: 405px;
+
+    .inner {
+      width: 440px;
+      height: 215px;
+      margin: auto;
+
+      h1 {
+        font-size: 30px;
+        font-weight: normal;
+        text-align: left;
+        text-transform: uppercase;
+      }
+      .split-1-2 {
+        width: 50%;
+        box-sizing: border-box;
+        font-size: 14px;
+        float: left;
+        padding-right: 10px;
+
+        &:last-child {
+          padding-left: 10px;
+          padding-right: 0;
+        }
+
+        .language-selection {
+          display: table;
+          height: 30px;
+          width: 100%;
+          margin: 0 0 12px;
+          cursor: pointer;
+
+          p {
+            text-align: left;
+            float: left;
+            font-weight: 100;
+            font-size: 20px;
+            display: table-cell;
+            vertical-align: middle;
+            margin: 0;
+          }
+          .flag {
+            height: 27px;
+            width: 27px;
+            background: url('../img/language-select-desktop-sprite.png');
+            overflow: hidden;
+            float: right;
+            margin-right: 10px;
+          }
+
+          .eng {
+            background-position: 0 0;
+          }
+          .cad {
+            background-position: -30px 0;
+          }
+          .eur {
+            background-position: -60px 0;
+          }
+          .arg {
+            background-position: -181px 0;
+          }
+          .mex {
+            background-position: -150px 0;
+          }
+          .cl {
+            background-position: -120px 0;
+          }
+          .ger {
+            background-position: -210px 0;
+          }
+          .por {
+            background-position: -241px 0;
+          }
+          .brz {
+            background-position: -271px 0;
+          }
+          .grk {
+            background-position: -301px 0;
+          }
+          .nor {
+            background-position: -331px 0;
+          }
+          .sv {
+            background-position: -360px 0;
+          }
+        }
+
+      }
+    }
+  }
+}
+
+/*login container*/
+.login {
+  display: none;
+
+  .mask{
+    background: url('../img/login-bg.jpg') no-repeat 0 0 / cover;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-size: 100% 100%;
+    position: fixed;
+  }
+  .modal-content {
+    width: 1015px;
+    height: 535px;
+
+    .inner {
+      width: 100%;
+      height: 500px;
+      margin: auto;
+      max-width: 900px;
+
+      h1 {
+        font-size: 30px;
+        font-weight: normal;
+        text-align: left;
+        text-transform: uppercase;
+        margin: -10px 0 15px;
+        line-height: 1;
+      }
+
+      .frame1 {
+        width: 50%;
+        float: left;
+        position: relative;
+        text-align: left;
+
+        .inner {
+          width: 90%;
+          margin: auto;
+
+          .loginUserNameBox {
+            position: relative;
+            margin: 4px 0;
+          }
+
+          .loginPswrdBox {
+            position: relative;
+            margin: 4px 0;
+          }
+
+          .loginPswrdBox .loginIcon {
+            background-position: 0px -222px;
+            width: 38px;
+            top: 8px;
+            left: 19px;
+          }
+
+          .loginUserNameBox .loginIcon {
+            background-position: 1px -111px;
+            width: 39px;
+            top: 8px;
+            left: 17px;
+            position: relative;
+          }
+
+          .loginBox input {
+            width: 100%;
+            padding: 10px 0 10px 60px;
+            font-size: 17px;
+            color: #333;
+            text-align: left;
+            border: none;
+            background-color: #f2f2f2;
+            border-radius: 5px;
+
+            font-family: 'Open Sans', sans-serif;
+          }
+
+          .input-error {
+            border: thin solid #c0122a !important;
+          }
+
+          .loginBox .loginIcon {
+            position: absolute;
+            background-image: url('../img/reg_icons_sprite.png');
+            background-repeat: no-repeat;
+            height: 30px;
+          }
+
+          .loginUserNameBox .loginIcon {
+            background-position: 1px -111px;
+            width: 39px;
+            top: 8px;
+            left: 17px;
+          }
+
+          .loginSubmitBox {
+            height: 60px;
+            width: 100%;
+            margin-top: 20px;
+
+            input {
+              width: 100%;
+              height: 60px;
+              text-transform: uppercase;
+              color: #fff;
+              line-height: 60px;
+              vertical-align: middle;
+              font-size: 25px;
+              background: #c0122a;
+              border: none;
+              border-radius: 5px;
+              font-family: 'Oswald-Light', sans-serif;
+              font-weight: 300;
+            }
+          }
+
+          .forgotPassword {
+            margin-top: 14px;
+            a {
+              color: #c0122a;
+              font-size: 13px;
+              line-height: 14px;
+              font-family: 'Open Sans', sans-serif;
+            }
+          }
+
+          .noAccount {
+            display: none;
+            max-width: 1024px;
+            margin: 20px auto;
+
+            .noAccountBtn {
+              height: 60px;
+              text-transform: uppercase;
+              color: #fff;
+              line-height: 60px;
+              font-size: 25px;
+              background: #455055;
+              border: none;
+              border-radius: 5px;
+              font-family: 'Oswald-Light', sans-serif;
+              font-weight: 300;
+              text-align: center;
+
+            }
+          }
+        }
+
+      }
+
+      .frame2 {
+        width: 50%;
+        float: left;
+        position: relative;
+        text-align: left;
+
+        .inner {
+          width: 90%;
+          margin: auto;
+
+          .registerBox {
+            width: 100%;
+            position: relative;
+            margin: 4px 0;
+          }
+
+          .registerBox input, .registerBox .addIcon {
+            width: 100%;
+            padding: 10px 0 10px 60px;
+            font-size: 17px;
+            color: #333;
+            text-align: left;
+            border: none;
+            background-color: #f2f2f2;
+            border-radius: 5px;
+
+          }
+          .registerBox .registerIcon {
+            position: absolute;
+            background-image: url('../img/reg_icons_sprite.png');
+            background-repeat: no-repeat;
+            height: 30px;
+          }
+
+          .registerUserNameBox .registerIcon, .registerFirstNameBox .registerIcon, .registerLastNameBox .registerIcon, .registerGenderBox .registerIcon {
+            background-position: 1px -111px;
+            width: 39px;
+            top: 8px;
+            left: 17px;
+          }
+
+          .registerEmailBox .registerIcon, .registerAddressBox .registerIcon, .registerCodeBox .registerIcon {
+            background-position: -3px -196px;
+            width: 38px;
+            top: 8px;
+            left: 19px;
+          }
+
+          .registerCountryBox .registerIcon {
+            background-position: 0px -26px;
+            width: 41px;
+            top: 8px;
+            left: 16px;
+          }
+
+          .registerPswrdBox .registerIcon {
+            background-position: 0px -222px;
+            width: 38px;
+            top: 8px;
+            left: 19px;
+          }
+
+          .validation-required-error, .validation-error {
+            color: #c0122a;
+            font-size: 13px;
+            line-height: 14px;
+            font-family: 'Open Sans', sans-serif;
+          }
+
+          .registerTermsBox {
+            position: relative;
+            width: 100%;
+            margin: 4px 2px;
+            height: 30px;
+          }
+
+          .registerTermsItem1 {
+            width: 25px;
+          }
+
+          .registerTermsItem1, .registerTermsItem2 {
+            height: 30px;
+            float: left;
+            position: relative;
+          }
+
+          .registerTermsBox input[type="checkbox"] {
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            left: 0;
+            top: 8px;
+          }
+
+          .registerTermsBox label {
+            color: #010000;
+            font-size: 13px;
+            position: relative;
+            left: 0;
+            top: 3px;
+
+            padding-bottom: 1px;
+            font-family: 'Open Sans', sans-serif;
+
+
+          }
+
+          .registerTermsItem2 a {
+            color: #000;
+          }
+
+          .registerSubmitBox {
+            height: 60px;
+            width: 100%;
+            margin-top: 20px;
+          }
+
+          .registerSubmitBox .registerSubmitBut {
+            width: 100%;
+            height: 60px;
+            text-transform: uppercase;
+            color: #fff;
+            line-height: 60px;
+            vertical-align: middle;
+            font-size: 25px;
+            background: #c0122a;
+            border: none;
+            border-radius: 5px;
+            font-family: 'Oswald-Light', sans-serif;
+            font-weight: 300;
+          }
+
+          p, input, select {
+            font-family: 'Open Sans', sans-serif;
+          }
+
+          .input-error {
+            border: thin solid #c0122a !important;
+          }
+
+          .regTxt {
+            font-size: 14px;
+
+            a {
+              text-decoration: none;
+              color: #010001;
+              border-bottom: 1px solid #000;
+              padding-bottom: 1px;
+            }
+
+          }
+        }
+      }
+    }
+
+    .validation-required-error, .validation-error {
+      color: #c0122a;
+      font-size: 13px;
+      line-height: 14px;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+  }
+}
+
+/*register 1, 2 and 3*/
+.register {
+  display: none;
+
+  .mask{
+    background: url('../img/login-bg.jpg') no-repeat 0 0 / cover;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-size: 100% 100%;
+    position: fixed;
+  }
+
+  .modal-content {
+    max-width: 1160px;
+    width: 100%;
+    height: 575px;
+
+    .reg1 {
+      width: 100%;
+      height: 475px;
+      margin: auto;
+      display: block;
+
+      h1 {
+        font-size: 30px;
+        font-weight: normal;
+        text-align: left;
+        text-transform: uppercase;
+      }
+
+      .registerFrameStep {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        font-size: 15px;
+        color: #747474;
+        font-family: 'Open Sans', sans-serif;
+      }
+
+      .frame1 {
+        width: 50%;
+        float: left;
+        position: relative;
+        text-transform: uppercase;
+        text-align: center;
+        padding-top: 15px;
+
+
+        .offerTxt1 {
+
+          width: 100%;
+          font-family: 'Oswald-Light', sans-serif;
+          font-size: 30px !important;
+          position: relative;
+          font-weight: 300;
+
+        }
+
+        .offerTxt2 {
+
+          width: 100%;
+          font-family: $primary-font !important;
+          font-size: 90px !important;
+          position: relative;
+          padding-top: 18px;
+
+          sup {
+            font-size: 60px !important;
+            font-weight: 100;
+          }
+        }
+
+        .offerTxt3 {
+
+          width: 100%;
+          font-family: 'Oswald-Light', sans-serif;
+          font-size: 50px !important;
+          position: relative;
+          font-weight: 300;
+          margin-top: -19px;
+        }
+
+        .Reg-apms {
+          margin: 35px auto 0;
+          text-transform: capitalize !important;
+          font-family: 'Open Sans', sans-serif;
+          font-weight: 300 !important;
+        }
+        .regOfferLn6Blk {
+          display: inline-block;
+          height: 30px;
+          line-height: 30px;
+          vertical-align: top;
+          font-size: 15px;
+        }
+
+        .regOfferLn6Blk2 {
+          background-position: -124px -28px;
+          width: 50px;
+        }
+        .regOfferLn6Blk3 {
+          background-position: -111px 4px;
+          width: 67px;
+        }
+
+        .regOfferLn6Blk4 {
+          background-position: -49px -58px;
+          width: 112px;
+        }
+        .regOfferLn6Blk {
+          display: inline-block;
+          height: 30px;
+          line-height: 30px;
+          vertical-align: top;
+          font-size: 15px;
+        }
+
+        .regOfferLn6BlkImg {
+          display: inline-block;
+          height: 30px;
+          background-image: url('../img/icons_sprite.png');
+          background-repeat: no-repeat;
+        }
+
+        .apms {
+          position: relative;
+
+        }
+
+      }
+
+      .frame2 {
+        width: 50%;
+        float: left;
+        position: relative;
+        padding-left: 50px;
+        text-align: left;
+
+        .inner {
+          width: 90%;
+          margin: auto;
+
+          h1 {
+            display: none;
+            font-size: 30px;
+            font-weight: normal;
+            text-align: left;
+            text-transform: uppercase;
+            margin: -10px 0 15px;
+            line-height: 1;
+          }
+
+          .registerBox {
+            width: 100%;
+            position: relative;
+            margin: 4px 0;
+          }
+
+          .registerBox input, .registerBox .addIcon {
+            width: 90%;
+            padding: 10px 0 10px 60px;
+            font-size: 17px;
+            color: #333;
+            text-align: left;
+            border: none;
+            background-color: #f2f2f2;
+            border-radius: 5px;
+
+          }
+          .registerBox .registerIcon {
+            position: absolute;
+            background-image: url('../img/reg_icons_sprite.png');
+            background-repeat: no-repeat;
+
+            height: 30px;
+          }
+
+          .registerUserNameBox .registerIcon, .registerFirstNameBox .registerIcon, .registerLastNameBox .registerIcon, .registerGenderBox .registerIcon {
+            background-position: 1px -111px;
+            width: 39px;
+            top: 8px;
+            left: 17px;
+          }
+
+          .registerEmailBox .registerIcon, .registerAddressBox .registerIcon, .registerCodeBox .registerIcon {
+            background-position: -3px -196px;
+            width: 38px;
+            top: 8px;
+            left: 19px;
+          }
+
+          .registerCountryBox .registerIcon {
+            background-position: 0px -26px;
+            width: 41px;
+            top: 8px;
+            left: 16px;
+          }
+
+          .registerPswrdBox .registerIcon {
+            background-position: 0px -222px;
+            width: 38px;
+            top: 8px;
+            left: 19px;
+          }
+
+          .validation-required-error, .validation-error {
+            color: #c0122a;
+            font-size: 13px;
+            line-height: 14px;
+            font-family: 'Open Sans', sans-serif;
+            width: 90%;
+          }
+
+          .registerTermsBox {
+            position: relative;
+            width: 100%;
+            margin: 4px 2px;
+            height: 30px;
+          }
+
+          .registerTermsItem1 {
+            width: 25px;
+          }
+
+          .registerTermsItem1, .registerTermsItem2 {
+            height: 30px;
+            float: left;
+            position: relative;
+          }
+
+          .registerTermsBox input[type="checkbox"] {
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            left: 0;
+            top: 8px;
+          }
+
+          .registerTermsBox label {
+            color: #010000;
+            font-size: 13px;
+            position: relative;
+            left: 0;
+            top: 3px;
+            font-family: 'Open Sans', sans-serif;
+
+            a {
+              color: #000;
+            }
+          }
+
+          .registerSubmitBox {
+            height: 60px;
+            width: 100%;
+            margin: 10px 0;
+          }
+
+          .registerSubmitBox .registerSubmitBut {
+            width: 90%;
+            height: 60px;
+            text-transform: uppercase;
+            color: #fff;
+            line-height: 60px;
+            vertical-align: middle;
+            font-size: 25px;
+            background: #c0122a;
+            border: none;
+            border-radius: 5px;
+            font-family: 'Oswald-Light', sans-serif;
+            font-weight: 300;
+          }
+
+          p, input, select {
+            font-family: 'Open Sans', sans-serif;
+          }
+
+          .input-error {
+            border: thin solid #c0122a !important;
+          }
+
+          .regTxt {
+            font-size: 14px;
+
+            a {
+              text-decoration: none;
+              color: #000;
+              border-bottom: 1px solid #000;
+              padding-bottom: 1px;
+            }
+
+          }
+
+
+
+        }
+
+
+
+
+      }
+      .offer {
+        text-align: center;
+        line-height: 1;
+        text-transform: uppercase;
+        display: none;
+
+        p:first-child {
+          color: $offer-text-color;
+          font-weight: normal;
+          font-size: 70px;
+          margin: 50px 0 0 0;
+          position: relative;
+          span {
+            color: $offer-sup-text-color;
+            font-weight: 100;
+            font-size: 48px;
+            top: -23px;
+            position: relative;
+          }
+        }
+        p:nth-child(2) {
+          color: $offer-text-color;
+          font-size: 40px;
+          font-weight: 100;
+          margin: 15px 0 0 0;
+        }
+      }
+
+    }
+
+    .reg2 {
+      max-width: 1045px;
+      width: 100%;
+      height: 475px;
+      margin: auto;
+      display: none;
+
+
+
+      h1 {
+        display: none;
+        line-height: 1;
+        font-size: 30px;
+        font-weight: normal;
+        text-align: left;
+        text-transform: uppercase;
+      }
+
+      .input-error {
+        border: thin solid #c0122a !important;
+      }
+      .validation-required-error, .validation-error {
+        color: #c0122a;
+        font-size: 13px;
+        line-height: 14px;
+        font-family: 'Open Sans', sans-serif;
+      }
+
+      .registerFrameStep {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        font-size: 15px;
+        color: #747474;
+        font-family: 'Open Sans', sans-serif;
+      }
+
+      .register2SubmitBox {
+        margin: 10px auto 20px;
+        width: 50%;
+        max-width: 465px;
+        height: 55px;
+        position: relative;
+        top: 50px;
+      }
+      .register2SubmitBox input {
+        width: 100%;
+        height: 60px;
+        text-transform: uppercase;
+        color: #fff;
+        line-height: 60px;
+        vertical-align: middle;
+        font-size: 25px;
+        background: #c0122a;
+        border: none;
+        border-radius: 5px;
+        font-family: 'Oswald-Light', sans-serif;
+
+      }
+      .register2FrameSSL {
+        position: absolute;
+        top: 327px;
+        right: -110px;
+        width: 74px;
+        height: 26px;
+        background: url('../img/icons_sprite.png') no-repeat 0px -88px;
+        display: block;
+      }
+
+      .frame1 {
+        width: 50%;
+        float: left;
+        position: relative;
+        text-transform: capitalize;
+        text-align: left;
+
+        .inner {
+          width: 90%;
+          margin: auto;
+
+        .registerBox {
+          width: 100%;
+          position: relative;
+          margin: 4px 0;
+          font-family: 'Open Sans', sans-serif;
+        }
+
+        .registerBox input, .registerBox .addIcon {
+          width: 100%;
+          padding: 10px 0 10px 60px;
+          font-size: 17px;
+          color: #333;
+          text-align: left;
+          border: none;
+          background-color: #f2f2f2;
+          border-radius: 5px;
+
+        }
+        .registerBox .registerIcon {
+          position: absolute;
+          background-image: url('../img/reg_icons_sprite.png');
+          background-repeat: no-repeat;
+
+          height: 30px;
+        }
+
+        .registerUserNameBox .registerIcon, .registerFirstNameBox .registerIcon, .registerLastNameBox .registerIcon, .registerGenderBox .registerIcon {
+          background-position: 1px -111px;
+          width: 39px;
+          top: 8px;
+          left: 18px;
+        }
+
+        .registerDOBBlock1 {
+          width: 33%;
+          float: left;
+          margin-right: 0.4995%;
+        }
+
+        .registerDOBBox .registerIcon {
+          background-position: 0px 1px;
+          width: 38px;
+          top: 8px;
+          left: 19px;
+        }
+
+        .registerDOBBlock2 {
+          width: 33%;
+          float: left;
+          margin-right: 0.4995%;
+        }
+
+        .registerBox .noIcon {
+          width: 100%;
+          padding: 10px 0 10px 10px;
+          font-size: 17px;
+          color: #333;
+          text-align: left;
+          border: none;
+          background-color: #f2f2f2;
+          border-radius: 5px;
+        }
+
+        .registerDOBBlock3 {
+          width: 33%;
+          float: left;
+
+        }
+
+        .registerMobileBox .registerIcon {
+          background-position: 0px -54px;
+          width: 38px;
+          top: 8px;
+          left: 19px;
+        }
+
+        .registerCurrBox .registerIcon {
+          background-position: 0px -83px;
+          width: 38px;
+          top: 8px;
+          left: 19px;
+        }
+
+        .clearDesktop {
+          clear: both;
+        }
+
+        option {
+          color: #a9a9a9 !important;
+
+        }
+
+        select {
+          color: #a9a9a9 !important;
+        }
+
+          #DialingCode{
+            width: calc( 30% - 4px) !important;
+            margin-right: 4px !important;
+            float: left !important;
+            margin-bottom: 4px;
+          }
+
+          #number{
+            width: 70% !important;
+            float: left !important;
+            margin-bottom: 4px;
+          }
+
+      }
+
+      }
+
+      .frame2 {
+        width: 50%;
+        float: left;
+        position: relative;
+        padding-left: 50px;
+        text-align: left;
+
+        .inner {
+          width: 90%;
+          margin: auto;
+
+          .input-error {
+            border: thin solid #c0122a !important;
+          }
+          .validation-required-error, .validation-error {
+            color: #c0122a;
+            font-size: 13px;
+            line-height: 14px;
+            font-family: 'Open Sans', sans-serif;
+          }
+
+          .registerFrameStep {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            font-size: 15px;
+            color: #747474;
+            font-family: 'Open Sans', sans-serif;
+          }
+
+          .registerBox {
+            width: 100%;
+            position: relative;
+            margin: 4px 0;
+            font-family: 'Open Sans', sans-serif;
+          }
+
+          .registerBox input, .registerBox .addIcon {
+            width: 100%;
+            padding: 10px 0 10px 60px;
+            font-size: 17px;
+            color: #333;
+            text-align: left;
+            border: none;
+            background-color: #f2f2f2;
+            border-radius: 5px;
+
+          }
+          .registerBox .registerIcon {
+            position: absolute;
+            background-image: url('../img/reg_icons_sprite.png');
+            background-repeat: no-repeat;
+
+            height: 30px;
+          }
+
+          .registerEmailBox .registerIcon, .registerAddressBox .registerIcon, .registerCodeBox .registerIcon {
+            background-position: -3px -196px;
+            width: 38px;
+            top: 8px;
+            left: 19px;
+          }
+
+          .registerCityBox .registerIcon {
+            background-position: 0px -139px;
+            width: 41px;
+            top: 8px;
+            left: 16px;
+          }
+
+          .registerStateBox .registerIcon {
+            background-position: 0px -167px;
+            width: 41px;
+            top: 8px;
+            left: 16px;
+          }
+
+          .registerCountryBox .registerIcon {
+            background-position: 0px -26px;
+            width: 41px;
+            top: 8px;
+            left: 16px;
+          }
+
+        }
+      }
+    }
+
+    .reg3 {
+      max-width: 1045px;
+      width: 100%;
+      margin: 0 auto 20px;
+      display: none;
+
+      h1 {
+        font-size: 30px;
+        font-weight: normal;
+        text-align: left;
+        text-transform: uppercase;
+      }
+
+      .frame1 {
+        width: 50%;
+        float: left;
+        position: relative;
+        text-transform: capitalize;
+        text-align: center;
+        padding-top: 60px;
+
+        p {
+          color: $offer-text-color;
+          font-weight: 100;
+          font-size: 25px;
+          line-height: 1.2;
+        }
+
+        .offer {
+          text-align: center;
+          line-height: 1;
+          text-transform: uppercase;
+          display: block;
+
+          p:first-child {
+            color: $offer-text-color;
+            font-weight: normal;
+            font-size: 70px;
+            margin: 0;
+            position: relative;
+            span {
+              color: $offer-sup-text-color;
+              font-weight: 100;
+              font-size: 48px;
+              top: -23px;
+              position: relative;
+            }
+          }
+          p:nth-child(2) {
+            color: $offer-text-color;
+            font-size: 40px;
+            font-weight: 100;
+            margin: 15px 0 0 0;
+          }
+        }
+
+      }
+
+      .frame2 {
+        width: 50%;
+        float: left;
+        position: relative;
+        padding-left: 50px;
+        text-align: left;
+
+        .successTxt {
+          font-size: 14px;
+          font-family: 'Open Sans', sans-serif;
+          padding-top: 100px;
+          font-weight: 400;
+        }
+
+        .redtxt {
+
+          color: #c0122a;
+
+        }
+
+        .registerClaimBox {
+          height: 60px;
+          width: 100%;
+          margin-top: 35px;
+        }
+
+        .registerClaimBox .registerClaimBut {
+          width: 90%;
+          height: 60px;
+          text-transform: uppercase;
+          color: #fff;
+          line-height: 60px;
+          vertical-align: middle;
+          font-size: 25px;
+          background: #c0122a;
+          border: none;
+          border-radius: 5px;
+          font-family: 'Oswald-Light', sans-serif;
+          font-weight: 300;
+        }
+
+        .claimBut {
+          padding-top: 20px;
+          width: 90%;
+          text-align: center;
+          margin: 0;
+        }
+
+        a {
+          text-decoration: none;
+          color: #c0122a;
+          border-bottom: 1px solid #c0122a;
+          padding-bottom: 1px;
+          text-align: center;
+          font-weight: bold;
+          font-size: 16px;
+        }
+
+      }
+
+    }
+
+  }
+}
+
+/*More Info Popup*/
+.moreInfo {
+
+  display: none;
+
+  .modal-content {
+    width: 1014px;
+    height: 513px;
+
+    .inner {
+      max-width: 830px;
+      height: 480px;
+      margin: auto;
+      width: 100%;
+      padding: 0 20px;
+      overflow-x: scroll;
+
+      h1 {
+        font-size: 30px;
+        font-weight: normal;
+        text-align: left;
+        text-transform: uppercase;
+      }
+
+      p {
+
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+
+      }
+
+      .ctas {
+        margin: 50px auto;
+        max-width: 550px;
+        width: 100%;
+        .cta {
+          width: 250px;
+          height: 65px;
+          float: left;
+          border-radius: 5px;
+          text-align: center;
+          display: table;
+          font-family: 'Oswald-Light', sans-serif;
+
+          a {
+            display: table-cell;
+            vertical-align: middle;
+            text-decoration: none;
+
+            span {
+              color: #fff;
+              font-size: 28px;
+              font-weight: 100;
+              text-transform: uppercase;
+
+            }
+          }
+
+        }
+        .play-now {
+          margin-right: 25px;
+          background-color: $red;
+        }
+        .download {
+          margin-left: 25px;
+          background-color: $grey;
+        }
+        .tap-now {
+          display: none;
+        }
+        .more-info {
+          clear: both;
+          text-align: center;
+          padding-top: 28px;
+          a {
+            text-decoration: none;
+            span {
+              margin-top: 25px;
+              font-size: 22px;
+              text-transform: uppercase;
+              color: $offer-sup-text-color;
+              border-bottom: 1px $offer-sup-text-color solid;
+              font-weight: 100;
+
+            }
+          }
+
+        }
+      }
+
+    }
+  }
+}
+
+/*my account modal*/
+.myAccount {
+  display: none;
+  .modal-content {
+    max-width: 1015px;
+    width: 100%;
+    padding-bottom: 50px;
+
+    .inner {
+      width: 100%;
+      height: auto;
+      margin: auto;
+      max-width: 900px;
+      padding: 0 20px 20px;
+
+      h1 {
+        font-size: 30px;
+        font-weight: normal;
+        text-align: left;
+        text-transform: uppercase;
+        line-height: 1;
+        margin: 0 0 20px 0;
+      }
+
+      h2 {
+        font-size: 18px;
+        font-weight: normal;
+        text-align: left;
+        text-transform: uppercase;
+        line-height: 1;
+        margin-bottom: 20px;
+      }
+
+      table {
+        width: 80%;
+        font-family: 'Open Sans', sans-serif;
+        tr {
+          width: 100%;
+          height: 25px;
+          td {
+            width: 50%;
+            text-align: left;
+            font-size: 14px;
+
+            a{
+              color: $red;
+            }
+          }
+
+          td:nth-child(1) {
+            font-weight: normal;
+          }
+
+          td:nth-child(1)::after {
+            content: ':';
+          }
+
+          td:nth-child(2) {
+            font-weight: bold;
+          }
+
+          .link{
+            display: block;
+            width: 100%;
+          }
+
+          .link::after{
+            content: "" !important;
+          }
+        }
+
+
+      }
+
+      .account-details-container {
+        width: 100%;
+        height: 258px;
+        border-bottom: 1px #d1d4dc solid;
+
+        .user-details {
+          width: 50%;
+          float: left;
+
+        }
+
+        .balance-details {
+          width: 50%;
+          float: left;
+        }
+
+        button{
+          height: 50px;
+          width: 210px;
+          background-color: $red;
+          color: #fff;
+          text-transform: uppercase;
+          border-radius: 5px;
+          outline: none;
+          border: none;
+          box-shadow: none;
+          font-size: 22px;
+          font-weight: 100;
+          float: right;
+          margin-top: -30px;
+
+        }
+
+      }
+
+      .rewards-container{
+        padding-top: 40px;
+        display: block;
+        overflow: auto;
+
+        .rewards{
+          width: 50%;
+          float: left;
+        }
+
+        .rewards-ctas-container{
+          width: 50%;
+          float: left;
+          margin-top: -40px;
+
+          .redeem-points{
+            max-width: 335px;
+            height: 42px;
+            width: 90%;
+            margin: auto;
+            background-color: #f1f1f1;
+            border-radius: 5px;
+            overflow: hidden;
+            text-align: center;
+            position: relative;
+            font-size: 18px;
+            padding-top: 8px;
+
+
+
+            span{
+              width: 38px;
+              height: calc(100% + 8px);
+              background-color: #dfdfdf;
+              cursor: pointer;
+              font-size: 24px;
+              margin-top: -8px;
+
+
+              &:nth-child(1){
+                float: left;
+              }
+
+              &:nth-child(2){
+                float: right;
+              }
+            }
+          }
+
+          .rewards-ctas{
+            width: 100%;
+
+            .cta{
+              width: 50%;
+              box-sizing: border-box;
+              float: left;
+              padding-left: 10px;
+              margin-top: 20px;
+
+              button{
+                height: 50px;
+                width: 100%;
+                background-color: #455055;
+                color: #fff;
+                text-transform: uppercase;
+                border-radius: 5px;
+                outline: none;
+                border: none;
+                box-shadow: none;
+                font-size: 22px;
+                font-weight: 100;
+                line-height: 1.1;
+              }
+            }
+
+
+          }
+        }
+      }
+
+
+    }
+  }
+}
+
+/*games overlay*/
+.games-overlay.modal-container {
+  display: block;
+  background: url("../img/games-overlay-1.jpg") no-repeat 0 0 / cover;
+
+  .mask{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+    .modal-content {
+      width: 90%;
+      max-width: 1200px;
+      height: 625px;
+      overflow: visible;
+
+      .close-modal-game {
+        width: 35px;
+        height: 35px;
+        position: absolute;
+        margin-top: 0;
+        top: 0;
+        right: -35px;
+        background-color: #fff;
+
+        img {
+
+          float: right;
+          margin-right: 9px;
+          cursor: pointer;
+          margin-top: 7px;
+        }
+      }
+
+      .inner {
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        position: relative;
+        top: 0;
+
+        h1 {
+          height: 35px;
+          font-size: 30px;
+          font-weight: normal;
+          text-align: left;
+          text-transform: uppercase;
+          margin: -10px 0 15px;
+          line-height: 1;
+
+        }
+
+        .game {
+          position: absolute;
+          top: 0;
+          left: 0;
+          background-color: #0b97c4;
+          width: 100%;
+          height: 100%;
+
+          iframe {
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+        .dropdown {
+
+          width: 400px;
+          height: 35px;
+          border-bottom: 1px red solid;
+          position: absolute;
+          text-transform: uppercase;
+          text-align: left;
+          overflow: hidden;
+          right: 0;
+          top: 0;
+          background-color: #fff;
+          -webkit-transition: height 0.5s;
+          -moz-transition: height 0.5s;
+          -ms-transition: height 0.5s;
+          -o-transition: height 0.5s;
+          transition: height 0.5s;
+
+          h1 {
+            font-size: 20px;
+            text-align: center;
+            text-transform: uppercase;
+            margin: 0 0 10px 0;
+            line-height: 1;
+            font-weight: 100;
+            background-color: #f2f2f2;
+            padding: 5px 0;
+            cursor: pointer;
+
+            &::after {
+              content: url("../img/games-overlay-arrow.png");
+              position: absolute;
+              right: 15px;
+            }
+          }
+
+          .offer {
+            text-align: center;
+            line-height: 1;
+            text-transform: uppercase;
+            font-family: "Oswald", sans-serif !important;
+
+            p:first-child {
+              color: $offer-text-color;
+              font-weight: normal;
+              font-size: 72px;
+              margin: 0;
+              position: relative;
+              font-family: "Oswald", sans-serif !important;
+              span {
+                color: $offer-sup-text-color;
+                font-weight: 100;
+                font-size: 40px;
+                top: -29px;
+                position: relative;
+                font-family: "Oswald", sans-serif !important;
+              }
+            }
+            p:nth-child(2) {
+              color: $offer-text-color;
+              font-size: 42px;
+              font-weight: 100;
+              margin: 8px 0 10px 0;
+              font-family: "Oswald", sans-serif !important;
+            }
+          }
+
+          .registerBox {
+            width: 90%;
+            position: relative;
+            margin: 4px auto;
+          }
+
+          .registerBox input, .registerBox .addIcon {
+            width: 100%;
+            padding: 10px 0 10px 60px;
+            font-size: 17px;
+            color: #333;
+            text-align: left;
+            border: none;
+            background-color: #f2f2f2;
+            border-radius: 5px;
+
+          }
+          .registerBox .registerIcon {
+            position: absolute;
+            background-image: url('../img/reg_icons_sprite.png');
+            background-repeat: no-repeat;
+            height: 30px;
+          }
+
+          .registerUserNameBox .registerIcon, .registerFirstNameBox .registerIcon, .registerLastNameBox .registerIcon, .registerGenderBox .registerIcon {
+            background-position: 1px -111px;
+            width: 39px;
+            top: 8px;
+            left: 17px;
+          }
+
+          .registerEmailBox .registerIcon, .registerAddressBox .registerIcon, .registerCodeBox .registerIcon {
+            background-position: -3px -196px;
+            width: 38px;
+            top: 8px;
+            left: 19px;
+          }
+
+          .registerCountryBox .registerIcon {
+            background-position: 0px -26px;
+            width: 41px;
+            top: 8px;
+            left: 16px;
+          }
+
+          .registerPswrdBox .registerIcon {
+            background-position: 0px -222px;
+            width: 38px;
+            top: 8px;
+            left: 19px;
+          }
+
+          .validation-required-error, .validation-error {
+            color: #c0122a;
+            font-size: 13px;
+            line-height: 14px;
+            padding-left: 5%;
+            font-family: 'Open Sans', sans-serif;
+          }
+
+          .registerTermsBox {
+            position: relative;
+            width: 80%;
+            margin: 4px auto;
+            height: 30px;
+          }
+
+          .registerTermsItem1 {
+            width: 25px;
+          }
+
+          .registerTermsItem1, .registerTermsItem2 {
+            height: 30px;
+            float: left;
+            position: relative;
+          }
+
+          .registerTermsBox input[type="checkbox"] {
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            left: 0;
+            top: 8px;
+          }
+
+          .registerTermsBox label {
+            color: #010000;
+            font-size: 13px;
+            position: relative;
+            left: 0;
+            top: 3px;
+            border-bottom: 1px solid #000;
+            padding-bottom: 1px;
+            font-family: 'Open Sans', sans-serif;
+          }
+
+          .registerSubmitBox {
+            height: 60px;
+            width: 100%;
+            margin-top: 10px;
+          }
+
+          .registerSubmitBox .registerSubmitBut {
+            width: 90%;
+            height: 60px;
+            text-transform: uppercase;
+            color: #fff;
+            line-height: 60px;
+            vertical-align: middle;
+            font-size: 25px;
+            background: #c0122a;
+            border: none;
+            border-radius: 5px;
+            font-family: 'Oswald-Light', sans-serif;
+            font-weight: 300;
+            margin: auto;
+            display: block;
+          }
+
+          p, input, select {
+            font-family: 'Open Sans', sans-serif;
+          }
+
+          .input-error {
+            border: thin solid #c0122a !important;
+          }
+
+          .regTxt {
+            font-size: 14px;
+
+            a {
+              text-decoration: none;
+              color: #010001;
+              border-bottom: 1px solid #000;
+              padding-bottom: 1px;
+            }
+
+          }
+
+        }
+      }
+
+      .validation-required-error, .validation-error {
+        color: #c0122a;
+        font-size: 13px;
+        line-height: 14px;
+        font-family: 'Open Sans', sans-serif;
+      }
+
+    }
+
+  &.gameLaunchWide{
+    .modal-content {
+    }
+  }
+
+  &.gameLaunchNormal{
+    .modal-content {
+      .dropdown{
+        height: 100%;
+        border-bottom: none;
+
+        h1::after{
+          content: '';
+        }
+      }
+
+      .inner{
+        .game{
+          iframe{
+            width: calc(100% - 400px);
+          }
+        }
+      }
+    }
+  }
+
+}
+
+
+
+/*effects*/
+.blur {
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+
+  transition: 0.1s filter ease-in-out;
+  -webkit-transition: 0.1s -webkit-filter ease-in-out;
+  -moz-transition: 0.1s -moz-filter ease-in-out;
+  -ms-transition: 0.1s -ms-filter ease-in-out;
+  -o-transition: 0.1s -o-filter ease-in-out;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.games-overlay-open{
+  height: 100% !important;
+}
+
+@media screen and (max-width: 1024px) {
+
+  .register .modal-content .reg1 .frame2 .inner h1{
+    display: block;
+    margin: 0.67em 0;
+  }
+
+  .gameHistory{
+    display: none !important;
+  }
+
+  .transactionHistory{
+    display: none !important;
+  }
+
+  .modal-container .modal-content .header{
+    display: block;
+  }
+
+  .moreInfo {
+    padding-bottom: 50px;
+  }
+
+  .moreInfo .modal-content .inner .ctas .download {
+    display: none;
+  }
+
+  .moreInfo .modal-content .inner .ctas .play-now {
+    margin: 0 auto;
+    float: none;
+  }
+
+  .login .modal-content .inner .frame2 {
+    display: none;
+  }
+
+  .login .modal-content .inner .frame1 {
+    width: 100%;
+  }
+
+  .login .modal-content .inner h1 {
+    margin: 10px 0 15px;
+  }
+
+  .login .modal-content .inner .frame1 .inner .loginBox input {
+    width: 100%;
+  }
+
+  .login .modal-content .inner .frame1 .inner .loginSubmitBox {
+    max-width: 1024px;
+    margin: 20px auto;
+  }
+
+  .login .modal-content .inner .frame1 .inner .loginSubmitBox input {
+    width: 100%;
+  }
+
+  .modal-container {
+    overflow: visible;
+  }
+
+  .modal-container .modal-content {
+    box-shadow: none;
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 0;
+    top: 0;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none;;
+  }
+
+  .login .modal-content .inner .frame1 .inner .noAccount {
+    display: block;
+  }
+
+  .register .modal-content .reg1 .frame1 {
+    display: none;
+  }
+
+  .register .modal-content .reg1 .frame2 {
+    width: 100%;
+  }
+
+  .register .modal-content .reg1 .registerFrameStep {
+    float: right;
+    margin-right: 0;
+    position: relative;
+    color: $red;
+    right: 0;
+    bottom: 0;
+  }
+
+  .register .modal-content .reg1 .frame2 .inner .regTxt a {
+    color: $red;
+    border-bottom: 1px solid $red;
+  }
+
+  .register .modal-content .reg1 .offer {
+    display: block;
+  }
+
+  .register .modal-content .reg1 .frame2 {
+    float: none;
+    padding-left: 0;
+  }
+
+  .register .modal-content .reg1 {
+    padding: 0 20px 120px 20px;
+    height: auto;
+  }
+
+  .register .modal-content .reg1 .frame2 .inner .registerBox input {
+    width: 100%;
+  }
+
+  .register .modal-content .reg1 .frame2 .inner .registerSubmitBox .registerSubmitBut {
+    width: 100%;
+  }
+
+  .register .modal-content .reg1 .frame2 h1 {
+    display: block;
+    margin: 0.67em 0;
+  }
+
+  .register .modal-content .reg2 {
+    height: 1000px;
+    padding: 0 20px;
+
+    h1 {
+      display: block;
+      width: 90%;
+    }
+
+    .frame1 {
+      width: 100%;
+      float: none;
+    }
+
+    .frame2 {
+      width: 100%;
+      padding: 0;
+      float: none;
+    }
+
+    .register2SubmitBox {
+      margin: 0 0 20px 0;
+      width: 100%;
+      max-width: none;
+    }
+
+    .registerFrameStep {
+      position: relative;
+      bottom: -45px;
+      right: 0;
+      color: $red;
+      text-align: right;
+    }
+  }
+
+  .register .modal-content .reg3 {
+    padding: 0 50px;
+    .frame1 {
+      width: 100%;
+      float: none;
+      padding-top: 0;
+    }
+
+    .frame2 {
+      width: 100%;
+      float: none;
+      padding-left: 0;
+
+      .successTxt {
+        padding-top: 40px;
+      }
+
+      .claimBut {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+      }
+
+      .registerClaimBox .registerClaimBut {
+        width: 100%;
+      }
+    }
+
+  }
+
+  .myAccount .modal-content .inner .account-details-container{
+    height: auto;
+  }
+
+  .myAccount .modal-content .inner .account-details-container .user-details{
+    width: 100%;
+  }
+
+  .myAccount .modal-content .inner .account-details-container .balance-details{
+    width: 100%;
+  }
+
+  .myAccount .modal-content .inner .account-details-container button{
+    float: none;
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .myAccount .modal-content .inner .rewards-container .rewards{
+    float: none;
+    width: 100%;
+  }
+
+  .myAccount .modal-content .inner .rewards-container .rewards-ctas{
+    width: 100%;
+    float: none;
+  }
+
+  .myAccount .modal-content .inner .rewards-container .rewards-ctas-container{
+    width: 100%;
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-height: 824px){
+
+  .games-overlay.modal-container .modal-content .inner .dropdown{
+    height: 100%;
+    border-bottom: none;
+
+    .offer{
+      display: none;
+    }
+  }
+
+  .games-overlay.modal-container .modal-content{
+    width: 100%;
+    height: calc(100% - 100px);
+    max-width: none;
+    margin-top: 50px;
+  }
+
+  .games-overlay.modal-container .modal-content .inner .game{
+    width: calc(100% - 400px);
+  }
+
+}
+
+
+.login .modal-content .inner .frame2 .inner .registerTermsBox label {
+  border: none;
+}
+
+.login .modal-content .inner .frame2 .inner .registerTermsBox label a{
+  color: #000;
+}
+
+@media screen and (max-width: 414px){
+  .register .modal-content .reg3 .frame1 p {
+    color: #333536;
+    font-weight: 100;
+    font-size: 25px;
+    line-height: 1.2;
+    margin: 10px 0;
+  }
+
+  .register .modal-content .reg3 .frame1 .offer p:first-child {
+    color: #333536;
+    font-weight: normal;
+    font-size: 44px;
+    margin: 0;
+    position: relative;
+  }
+
+  .register .modal-content .reg3 .frame1 .offer p:first-child span {
+    color: #777c7f;
+    font-weight: 100;
+    font-size: 28px;
+    top: -16px;
+    position: relative;
+  }
+
+  .register .modal-content .reg3 .frame1 .offer p:nth-child(2) {
+    color: #333536;
+    font-size: 36px;
+    font-weight: 100;
+    margin: 0px 0 0 0;
+  }
+}

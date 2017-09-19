@@ -1,0 +1,157 @@
+footer.landing {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+
+  .logos {
+    width: 100%;
+    background: rgba(196, 197, 199, 0.7);
+    position: relative;
+    overflow: auto;
+    padding: 20px;
+    display: block;
+
+    .logos-inner {
+      max-width: 1050px;
+      margin: auto;
+      left: 0;
+      right: 0;
+      min-height: 20px;
+      display: block;
+      overflow: auto;
+      text-align: center;
+
+      .logo {
+        display: inline-block;
+        padding: 0 14px;
+
+        img {
+          height: 100%;
+        }
+
+        &:first-child {
+          padding-left: 0;
+        }
+        &:last-child {
+          padding-right: 0;
+        }
+      }
+    }
+  }
+
+  .disclaimer{
+    position: relative;
+    background-color: #8a8c8e;
+
+    .disclaimer-inner{
+      max-width: 1250px;
+      margin: auto;
+      text-align: center;
+      color: #e3e3e4;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      line-height: 1.4;
+      font-weight: 100;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 16px;
+    }
+  }
+}
+
+
+footer.site{
+  position: relative;
+
+  .logos {
+    width: 100%;
+    background: rgba(196, 197, 199, 0.7);
+    position: relative;
+    overflow: auto;
+    padding: 20px;
+    display: block;
+
+    .logos-inner {
+      max-width: 1050px;
+      margin: auto;
+      left: 0;
+      right: 0;
+      min-height: 20px;
+      display: block;
+      overflow: auto;
+      text-align: center;
+
+      .logo {
+        display: inline-block;
+        padding: 0 14px;
+
+        img {
+          height: 100%;
+        }
+
+        &:first-child {
+          padding-left: 0;
+        }
+        &:last-child {
+          padding-right: 0;
+        }
+      }
+    }
+  }
+
+  .disclaimer{
+    position: relative;
+    background-color: #8a8c8e;
+
+    .disclaimer-inner{
+      font-family: 'Open Sans', sans-serif;
+      max-width: 1250px;
+      margin: auto;
+      text-align: center;
+      color: #e3e3e4;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      line-height: 1.4;
+      font-weight: 100;
+      font-size: 16px;
+    }
+  }
+}
+
+.loggedin{
+  footer.site{
+    .logos{
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  footer.site {
+    margin-bottom: 100px;
+  }
+
+  footer.site .logos .logos-inner .logo{
+    padding: 5px 14px;
+  }
+
+  footer.landing .logos .logos-inner .logo{
+    padding: 5px 14px;
+  }
+
+  .loggedin{
+    footer.site{
+      .disclaimer{
+        overflow: auto;
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 600px){
+  footer.site {
+    margin-bottom: 55px;
+  }
+}
+

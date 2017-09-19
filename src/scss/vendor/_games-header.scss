@@ -1,0 +1,382 @@
+
+.games-header-container {
+  position: relative;
+  max-width: 1454px;
+  z-index: 1;
+
+
+  .inner{
+    overflow-x: visible;
+    max-height: 80px;
+    overflow-y: scroll;
+
+    .mobile-arrow {
+      position: absolute;
+      display: none;
+      right: 0;
+      width: 24px;
+      height: 80px;
+      background: url('../img/polygon.png') no-repeat;
+      z-index: 10000000;
+    }
+
+    .games-header-container-inner {
+      max-width: 1454px;
+      min-width: 680px;
+      margin: auto;
+      width: 100%;
+      height: 80px;
+      background-color: #960f22;
+      border-radius: 5px 5px 0 0;
+      overflow-y: scroll;
+      overflow-x: visible;
+
+      .games-header-item {
+        width: calc(100% / 9);
+        height: 100%;
+        float: left;
+        max-height: 80px;
+        overflow: hidden;
+        max-width: 140px;
+        min-width: 110px;
+        box-sizing: border-box;
+        border-right: 1px #770b18 solid;
+        border-left: 1px #b5132c solid;
+        position: relative;
+        cursor: pointer;
+        z-index: 2;
+
+        &:first-child{
+          border-left: none;
+        }
+
+
+
+        .icon-container {
+          width: 100%;
+          height: 50%;
+          position: absolute;
+          top: 0;
+
+
+
+          @mixin icon-position($x, $y){
+            background-position: ($x $y);
+            &.hover{
+              background-position: ($x 0);
+            }
+          }
+
+          $iconOffsetY: -35px;
+
+          .icon {
+            width: 45px;
+            height: 32px;
+            margin: auto;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            position: absolute;
+            background: url('../img/games-header-icon-sprite.png') no-repeat;
+
+
+
+            &.heart {
+              @include icon-position(10px, $iconOffsetY);
+            }
+            &.star {
+              @include icon-position(-27px, $iconOffsetY);
+            }
+            &.cherry {
+              @include icon-position(-63px, $iconOffsetY);
+            }
+            &.wheel {
+              @include icon-position(-103px, $iconOffsetY);
+            }
+            &.suites {
+              @include icon-position(-141px, $iconOffsetY);
+            }
+            &.sevens {
+              @include icon-position(-185px, $iconOffsetY);
+            }
+            &.horse-shoe {
+              @include icon-position(-229px, $iconOffsetY);
+            }
+            &.dice {
+              @include icon-position(-267px, $iconOffsetY);
+            }
+          }
+
+
+        }
+
+        .title {
+          width: 100%;
+          height: 50%;
+          position: absolute;
+          bottom: 0;
+          max-height: 40px;
+          overflow: hidden;
+
+          span {
+            color: #ffffff;
+            text-align: center;
+            margin: auto;
+            width: 65%;
+            display: block;
+            text-transform: uppercase;
+            font-size: 12px;
+            line-height: 1;
+            position: absolute;
+            font-weight: 100;
+            letter-spacing: 1px;
+            left: 0;
+            right: 0;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+          }
+        }
+
+      }
+
+      .games-header-sub-item {
+        height: 0;
+        width: 100%;
+        min-width: 320px;
+        background-color: #fff;
+        position: absolute;
+        top: 80px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+
+        a{
+          font-size: 15px;
+          color: $red;
+          text-transform: uppercase;
+          padding: 20px 20px 0;
+          display: block;
+          float: left;
+          text-decoration: none;
+        }
+      }
+
+      .search-container {
+        max-width: 250px;
+        width: 0;
+        height: 80px;
+        right: 0;
+        position: absolute;
+        z-index: 1;
+
+        .search-icon {
+          background-color: #780c1b;
+          width: 78px;
+          height: 100%;
+          cursor: pointer;
+          right: 0;
+          position: absolute;
+
+          img {
+            margin: auto;
+            display: block;
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+          }
+
+        }
+      }
+
+      .input-container {
+        width: 100%;
+        height: 100%;
+        right: 78px;
+        overflow: hidden;
+        background-color: #780c1b;
+        position: relative;
+        -webkit-transition: width 0.2s linear;
+        -moz-transition: width 0.2s linear;
+        -ms-transition: width 0.2s linear;
+        -o-transition: width 0.2s linear;
+        transition: width 0.2s linear;
+
+        input {
+          position: absolute;
+          top: 50%;
+          -webkit-transform: translateY(-50%);
+          -moz-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          -o-transform: translateY(-50%);
+          transform: translateY(-50%);
+          width: calc(100% - 10px);
+          color: #fff;
+          border: none;
+          outline: none;
+          height: 40px;
+          font-size: 18px;
+          background-color: $red;
+          padding-left: 10px;
+          margin-left: 10px;
+          border-radius: 5px;
+          font-weight: 100;
+
+          &::-webkit-input-placeholder {
+            color: #fff;
+          }
+
+          &:-moz-placeholder { /* Firefox 18- */
+            color: #fff;
+          }
+
+          &::-moz-placeholder {  /* Firefox 19+ */
+            color: #fff;
+          }
+
+          &:-ms-input-placeholder {
+            color: #fff;
+          }
+
+        }
+      }
+
+    }
+  }
+
+}
+
+.open-search {
+  width: calc(100% - 78px) !important;
+}
+
+/*.hover{
+  background-position-y: 0 !important;
+}*/
+
+.open-search-z{
+  z-index: 3 !important;
+}
+
+@media screen and (max-width: 1024px) {
+  .games-header-container .inner .games-header-container-inner{
+    border-radius: 5px 0 0 0;
+  }
+
+  .games-header-container .inner .games-header-container-inner .search-container {
+    display: none;
+  }
+
+  .scratch-cards{
+    display: none;
+  }
+
+  .casual-games{
+    display: none;
+  }
+
+  .games-header-container .inner .games-header-container-inner .games-header-item{
+    width: calc(100% / 7);
+  }
+}
+
+
+@media screen and (max-width: 600px){
+  .games-header-container .inner .games-header-container-inner{
+    height: 55px;
+  }
+
+
+  .games-header-container .inner .games-header-container-inner .games-header-item .icon-container {
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    top: 0;
+
+
+
+    @mixin icon-position($x, $y){
+      background-position: ($x $y);
+      &.hover{
+        background-position: ($x 0);
+      }
+    }
+
+    $iconOffsetY: -23px;
+
+    .icon {
+      background: url("../img/games-header-icon-sprite-small-test.svg") no-repeat;
+      width: 26px;
+      height: 21px;
+      bottom: 3px;
+
+
+
+      &.heart {
+        @include icon-position(5px, $iconOffsetY);
+      }
+      &.star {
+        @include icon-position(-18px, $iconOffsetY);
+      }
+      &.cherry {
+        @include icon-position(-41px, $iconOffsetY);
+      }
+      &.wheel {
+        @include icon-position(-66px, $iconOffsetY);
+      }
+      &.suites {
+        @include icon-position(-90px, $iconOffsetY);
+      }
+      &.sevens {
+        @include icon-position(-117px, $iconOffsetY);
+      }
+      &.horse-shoe {
+        @include icon-position(-146px, $iconOffsetY);
+      }
+      &.dice {
+        @include icon-position(-168px, $iconOffsetY);
+      }
+    }
+  }
+
+
+  .games-header-container .inner .games-header-container-inner .games-header-item .title span{
+    font-size: 10px;
+  }
+
+  .games-header-container .inner .games-header-container-inner .games-header-sub-item{
+    top: 55px;
+  }
+
+  .games-header-container .inner .games-header-container-inner .games-header-sub-item a{
+    padding-top: 9px;
+  }
+  .games-header-container .inner .games-header-container-inner .games-header-sub-item a{
+    font-size: 12px;
+  }
+
+  .games-header-container .inner .mobile-arrow{
+    width: 17px;
+    height: 55px;
+    background-size: contain;
+  }
+
+}
+
+@media screen and (max-width: 660px){
+  .games-header-container .inner .mobile-arrow {
+    display: block;
+  }
+}
+
+
+
+
